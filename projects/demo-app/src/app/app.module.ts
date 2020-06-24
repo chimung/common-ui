@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { UISidemodalModule } from 'common-ui';
 import { TestModalComponent } from './test-modal/test-modal.component';
 import { ModalSidebarComponent } from './components/main/modal-sidebar.component'
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { ModalSidebarComponent } from './components/main/modal-sidebar.component
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     UISidemodalModule.forRoot()
   ],

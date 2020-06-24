@@ -6,7 +6,6 @@ import { ShellComponent } from './components/shell/shell.component';
 import { ViewInjectPointDirective } from './directives/view-inject-point.directive'
 import { UISidemodalActiveService } from './services/ui-sidemodal-active/ui-sidemodal-active.service'
 import { UISidemodalDataService } from './services/ui-sidemodal-data/ui-sidemodal-data.service'
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 
 
@@ -14,7 +13,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
   declarations: [ShellComponent, ViewInjectPointDirective],
   imports: [
     CommonModule,
-    BrowserAnimationsModule,
     OverlayModule
   ],
   providers: [

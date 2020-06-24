@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { UISidemodalService } from 'common-ui'
+import { UISidemodalService, } from 'common-ui'
 import { TestModalComponent } from '../../test-modal/test-modal.component'
 
 @Component({
