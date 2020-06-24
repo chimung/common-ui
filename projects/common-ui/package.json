@@ -1,5 +1,7 @@
 {
-  "name": "common-ui",
+  "name": "ngx-common-ui",
+  "author": "Hung Cung",
+  "description": "Library contain some common UI element for fast deployment",
   "version": "0.0.1",
   "peerDependencies": {
     "@angular/cdk": "^8",
