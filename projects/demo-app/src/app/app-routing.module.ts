@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { MainComponent } from './components/main/main.component'
+import { ModalSidebarComponent } from './components/main/modal-sidebar.component'
 
 
 const routes: Routes = [
-  { path: 'main', component: MainComponent },
+  { path: 'main', component: ModalSidebarComponent },
   { path: '**', redirectTo: '/main'}
 ];
 

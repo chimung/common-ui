@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UISidemodalActiveService } from 'common-ui'
 
 @Component({
   selector: 'app-test-modal',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TestModalComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private _activeModal: UISidemodalActiveService
+  ) { }
 
   ngOnInit() {
+  }
+
+  close() {
+    this._activeModal.close()
   }
 
 }

@@ -3,11 +3,11 @@ import { UIModalSidebarService } from 'common-ui'
 import { TestModalComponent } from '../../test-modal/test-modal.component'
 
 @Component({
-  selector: 'app-main',
-  templateUrl: './main.component.html',
-  styleUrls: ['./main.component.scss']
+  selector: 'app-modal-sidebar',
+  templateUrl: './modal-sidebar.component.html',
+  styleUrls: ['./modal-sidebar.component.scss']
 })
-export class MainComponent implements OnInit {
+export class ModalSidebarComponent implements OnInit {
 
   constructor(
     private _modalSidebar: UIModalSidebarService
@@ -17,6 +17,6 @@ export class MainComponent implements OnInit {
   }
 
   openModalSidebar() {
-    this._modalSidebar.openModal(TestModalComponent)
+    this._modalSidebar.openModal(TestModalComponent).subscribe(console.log)
   }
 }

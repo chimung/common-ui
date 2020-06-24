@@ -6,13 +6,13 @@ import { AppComponent } from './app.component';
 
 import { UIModalSidebarModule } from 'common-ui';
 import { TestModalComponent } from './test-modal/test-modal.component';
-import { MainComponent } from './components/main/main.component'
+import { ModalSidebarComponent } from './components/main/modal-sidebar.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     TestModalComponent,
-    MainComponent
+    ModalSidebarComponent
   ],
   imports: [
     BrowserModule,
