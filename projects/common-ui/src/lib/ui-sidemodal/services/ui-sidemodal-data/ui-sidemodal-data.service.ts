@@ -1,8 +1,8 @@
-import { Injectable, Type } from '@angular/core'
+import { ComponentFactory, Injectable } from '@angular/core'
 
-@Injectable()
+@Injectable({ providedIn: 'root' })
 export class UISidemodalDataService {
-  inputView: Type<any>
+  componentFactory: ComponentFactory<any>
 
   constructor() { }
 }

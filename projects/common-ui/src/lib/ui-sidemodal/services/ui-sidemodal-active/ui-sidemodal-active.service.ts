@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core'
 import { OverlayRef } from '@angular/cdk/overlay'
 import { Observable, Subject } from 'rxjs'
 
-@Injectable()
+@Injectable({ providedIn: 'root' })
 export class UISidemodalActiveService {
   private _overlayRef: OverlayRef
   private _result$
