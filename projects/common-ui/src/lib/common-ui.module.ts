@@ -7,6 +7,8 @@ import { CommonUiComponent } from './common-ui.component';
   declarations: [CommonUiComponent],
   imports: [
   ],
-  exports: [CommonUiComponent]
+  exports: [
+    CommonUiComponent
+  ]
 })
 export class CommonUiModule { }

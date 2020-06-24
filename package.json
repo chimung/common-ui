@@ -4,6 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "rebuild": "ng build common-ui && ng serve demo-app",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",

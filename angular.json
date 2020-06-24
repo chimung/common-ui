@@ -63,6 +63,7 @@
               "projects/demo-app/src/assets"
             ],
             "styles": [
+              "node_modules/@angular/cdk/overlay-prebuilt.css",
               "node_modules/bootstrap/dist/css/bootstrap.css",
               "projects/demo-app/src/styles.scss"
             ],
