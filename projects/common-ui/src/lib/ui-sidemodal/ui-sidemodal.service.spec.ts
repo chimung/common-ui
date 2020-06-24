@@ -1,12 +1,12 @@
 import { TestBed } from '@angular/core/testing';
 
-import { CommonUiService } from './common-ui.service';
+import { UiSidemodalService } from './u-i-sidemodal.service';
 
-describe('CommonUiService', () => {
+describe('UiModalSidebarService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));
 
   it('should be created', () => {
-    const service: CommonUiService = TestBed.get(CommonUiService);
+    const service: UiSidemodalService = TestBed.get(UiSidemodalService);
     expect(service).toBeTruthy();
   });
 });

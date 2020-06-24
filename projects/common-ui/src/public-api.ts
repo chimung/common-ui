@@ -3,7 +3,7 @@
  */
 
 export {
-  UIModalSidebarModule,
-  UIModalSidebarService,
+  UISidemodalModule,
+  UISidemodalService,
   UISidemodalActiveService
-} from './lib/ui-modal-sidebar/ui-modal-sidebar.module';
+} from './lib/ui-sidemodal/ui-sidemodal.module';

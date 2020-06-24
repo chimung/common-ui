@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { UIModalSidebarService } from 'common-ui'
+import { UISidemodalService } from 'common-ui'
 import { TestModalComponent } from '../../test-modal/test-modal.component'
 
 @Component({
@@ -10,7 +10,7 @@ import { TestModalComponent } from '../../test-modal/test-modal.component'
 export class ModalSidebarComponent implements OnInit {
 
   constructor(
-    private _modalSidebar: UIModalSidebarService
+    private _modalSidebar: UISidemodalService
   ) { }
 
   ngOnInit() {

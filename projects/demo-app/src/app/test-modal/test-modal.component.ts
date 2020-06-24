@@ -16,7 +16,7 @@ export class TestModalComponent implements OnInit {
   }
 
   close() {
-    this._activeModal.close()
+    this._activeModal.close(null)
   }
 
 }

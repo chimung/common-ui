@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core'
 import { OverlayRef } from '@angular/cdk/overlay'
 import { Observable, Subject } from 'rxjs'
-import { ModalResultModel } from '../../ui-modal-sidebar.model'
 
 @Injectable()
 export class UISidemodalActiveService {
@@ -19,7 +18,7 @@ export class UISidemodalActiveService {
     return this._result$.asObservable()
   }
 
-  close(data) {
+  close(data = null) {
     this._overlayRef.detach()
     this._result$.next(data)
     this._result$.complete()

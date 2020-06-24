@@ -1,16 +1,15 @@
-import { Component, Injectable, TemplateRef, Type } from '@angular/core'
-import { ComponentType, Overlay, OverlayConfig, OverlayRef } from '@angular/cdk/overlay'
-import { ModalConfig, ModalResultModel } from './ui-modal-sidebar.model'
-import { ComponentPortal, TemplatePortal } from '@angular/cdk/portal'
+import { Injectable, Type } from '@angular/core'
+import { Overlay, OverlayConfig, OverlayRef } from '@angular/cdk/overlay'
+import { ModalConfig } from './ui-sidemodal.model'
+import { ComponentPortal } from '@angular/cdk/portal'
 import { ShellComponent } from './components/shell/shell.component'
 import { UISidemodalDataService } from './services/ui-sidemodal-data/ui-sidemodal-data.service'
 import { UISidemodalActiveService } from './services/ui-sidemodal-active/ui-sidemodal-active.service'
 import { Observable } from 'rxjs'
 
 @Injectable()
-export class UIModalSidebarService {
+export class UISidemodalService {
 
-  private _overlayConfig: OverlayConfig
   private _overlayRef: OverlayRef
 
   constructor(

@@ -1,4 +1,4 @@
-import { Component, Injectable, TemplateRef, Type } from '@angular/core'
+import { Injectable, Type } from '@angular/core'
 
 @Injectable()
 export class UISidemodalDataService {
