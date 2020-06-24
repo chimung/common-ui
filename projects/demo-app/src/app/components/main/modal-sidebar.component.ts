@@ -17,6 +17,6 @@ export class ModalSidebarComponent implements OnInit {
   }
 
   openModalSidebar() {
-    this._modalSidebar.openModal(TestModalComponent).subscribe(console.log)
+    this._modalSidebar.openModal<{ test: number }>(TestModalComponent).subscribe(res => console.log(res))
   }
 }

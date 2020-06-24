@@ -27,7 +27,7 @@ export class UIModalSidebarService {
     }
   }
 
-  openModal(component: Type<any>): Observable<ModalResultModel> {
+  openModal<T>(component: Type<any>): Observable<T> {
     const overlayConfig = this.buildConfig()
     this._overlayRef = this._overlay.create(overlayConfig)
 

@@ -6,7 +6,7 @@ import { ModalResultModel } from '../../ui-modal-sidebar.model'
 @Injectable()
 export class UISidemodalActiveService {
   private _overlayRef: OverlayRef
-  private _result$: Subject<ModalResultModel>
+  private _result$
 
   constructor() { }
 
@@ -14,21 +14,21 @@ export class UISidemodalActiveService {
     this._overlayRef = ref
   }
 
-  createNewResultObservable(): Observable<ModalResultModel> {
-    this._result$ = new Subject<ModalResultModel>()
+  createNewResultObservable<T>(): Observable<T> {
+    this._result$ = new Subject<T>()
     return this._result$.asObservable()
   }
 
-  close() {
+  close(data) {
     this._overlayRef.detach()
-    this._result$.next()
+    this._result$.next(data)
     this._result$.complete()
     this._result$.unsubscribe()
   }
 
   dismiss() {
     this._overlayRef.detach()
-    this._result$.next()
+    this._result$.next({ reason: 'dismiss' })
     this._result$.complete()
     this._result$.unsubscribe()
   }
