@@ -19,11 +19,8 @@
       "dom"
     ],
     "paths": {
-      "common-ui": [
+      "ngx-common-ui": [
         "dist/common-ui"
-      ],
-      "common-ui/*": [
-        "dist/common-ui/*"
       ]
     }
   },

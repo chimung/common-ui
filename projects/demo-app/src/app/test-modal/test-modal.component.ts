@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { UISidemodalActiveService } from 'common-ui'
+import { UISidemodalActiveService } from 'ngx-common-ui'
 
 @Component({
   selector: 'app-test-modal',
